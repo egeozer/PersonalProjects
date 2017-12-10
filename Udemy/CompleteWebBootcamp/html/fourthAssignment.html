@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="">
+    <div>
+      <label>First Name:<input name="name" type="text" placeholder="John" required></label>
+      <label>Last Name:<input name="last" type="text" placeholder="Smith"required></label>
+    </div>
+
+    <div>
+      <label>Male<input name="gender"type="radio" value="Male" required></label>
+      <label>Female<input name="gender"type="radio" value="Female"></label>
+      <label>Other<input name="gender"type="radio" value="Other"></label>
+   </div>
+
+   <div>
+     <label>Email:<input name="email" type="email" placeholder="Your email" required></label>
+     <label>Password:<input name="pass" type="password" placeholder="Your password" required></label>
+   </div>
+
+   <div>
+     <label>Birthday:
+       <select name="Month">
+         <option value="jan">Jan</option>
+         <option value="feb">Feb</option>
+         <option value="mar">Mar</option>
+       </select>
+       <select name="Day">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+       </select>
+       <select name="Year">
+         <option value="1994">1994</option>
+         <option value="1993">1993</option>
+         <option value="1992">1992</option>
+       </select>
+     </label>
+   </div>
+   
+   <div>I agree to the terms and conditions <input name="condition" type="checkBox" required></div>
+   
+   <div>
+     <input type="Submit">
+   </div>
+ </form>
+</body>
+</html>
