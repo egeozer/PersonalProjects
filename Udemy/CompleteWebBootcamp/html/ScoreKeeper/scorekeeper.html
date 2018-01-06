@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Score Keeper!</title>
+</head>
+<body>
+  <h1 id="idStatus"></h1>
+  <h1>
+    <span id="idFirst">0</span> to <span id="idSecond">0</span>
+  </h1>
+ 
+  <p>Playing to:<span id="idLimit"> 5</span></p>
+  
+  <div>
+    <input type="number" id="idSetLimit" onchange="typing()" placeholder="Insert max score here">
+    <button type="button" onclick="playerOne()">Player One</button>
+    <button type="button" onclick="playerTwo()">Player Two</button>
+    <button type="button" onclick="reset()">Reset</button>
+  </div>
+
+  <script src="scorekeeper.js"></script>
+</body>
+</html>
