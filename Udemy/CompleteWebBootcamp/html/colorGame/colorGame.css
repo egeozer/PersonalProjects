@@ -19,6 +19,7 @@ body {
   max-width: 600px;
   transition: all 0.5s;
 }
+
 h1 {
   text-align: left;
   color: white;
@@ -27,6 +28,7 @@ h1 {
   text-transform: uppercase;
   font-weight: normal;
 }
+
 h2 {
   text-align: center;
   color: white;
@@ -34,12 +36,14 @@ h2 {
   margin: 0;
   text-transform: uppercase;
   font-weight: normal;
+  padding-bottom: 20px;
 }
 
 #idStripe {
   background: white;
   height: 30px;
   color: black;
+  text-align: center;
 }
 
 button, label{
@@ -65,8 +69,9 @@ button:hover {
 
 #idColor {
   font-weight: bold;
+  font-size: 50px;
 }
 
-#idEasyBtn, #idNewColors {
-  margin-left: 10%;
+#idSpan, #idNewColors {
+  display: inline-block;
 }

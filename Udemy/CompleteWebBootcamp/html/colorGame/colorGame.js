@@ -33,7 +33,7 @@ function generateColors(){
   
   if(pickedColor === clickedColor){
     generateSameColor();
-    document.querySelector("h1").style.backgroundColor = pickedColor;
+    document.querySelector("h2").style.backgroundColor = pickedColor;
     document.querySelector("#idStatus").textContent = "You guessed it!"
   }
   else{
@@ -45,7 +45,6 @@ function generateSameColor(){
   squares.forEach((square) => {
     square.style.backgroundColor = pickedColor;
   });
-
 }
 
 function newColors(){
@@ -61,13 +60,13 @@ function newColors(){
 function easy(){
   setGameDifficulty(3);
   easyBtn.classList.add("selected");
-  
 }
+
 function hard(){
   setGameDifficulty(6);
   hardBtn.classList.add("selected");
-  
 }
+
 function veryHard(){
   setGameDifficulty(12);
   veryHardBtn.classList.add("selected");
@@ -94,11 +93,9 @@ function setGameDifficulty(numberOfSquares){
   });
   newColors();
   newGame();
-
 }
 
 function newGame(){
-  document.querySelector("h1").style.backgroundColor = "steelBlue";
+  document.querySelector("h2").style.backgroundColor = "steelBlue";
   document.querySelector("#idStatus").textContent = "What Color is it?";
-
 }
