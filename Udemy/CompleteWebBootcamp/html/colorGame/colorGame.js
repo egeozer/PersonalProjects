@@ -6,7 +6,6 @@ var hardBtn = document.querySelector("#idHardBtn");
 var veryHardBtn = document.querySelector("#idVeryHardBtn");
 var container = document.querySelector("#idContainer");
 
-
 createSquares(6);
 squares.forEach((square) => {
   square.style.backgroundColor = generateRandomColor();
@@ -34,6 +33,8 @@ function generateColors(){
   
   if(pickedColor === clickedColor){
     generateSameColor();
+    document.querySelector("h1").style.backgroundColor = pickedColor;
+    document.querySelector("#idStatus").textContent = "You guessed it!"
   }
   else{
     this.style.backgroundColor = "#232323";
@@ -44,6 +45,7 @@ function generateSameColor(){
   squares.forEach((square) => {
     square.style.backgroundColor = pickedColor;
   });
+
 }
 
 function newColors(){
@@ -53,6 +55,7 @@ function newColors(){
   randomNumber = Math.floor(Math.random()*squares.length);
   pickedColor = squares[randomNumber].style.backgroundColor;
   document.querySelector("#idColor").textContent = pickedColor;
+  newGame();
 }
 
 function easy(){
@@ -90,5 +93,12 @@ function setGameDifficulty(numberOfSquares){
     square.addEventListener("click", generateColors);
   });
   newColors();
+  newGame();
+
+}
+
+function newGame(){
+  document.querySelector("h1").style.backgroundColor = "steelBlue";
+  document.querySelector("#idStatus").textContent = "What Color is it?";
 
 }
