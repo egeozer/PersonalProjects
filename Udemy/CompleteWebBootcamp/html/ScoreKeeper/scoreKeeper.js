@@ -7,11 +7,11 @@ var secondScoreDisplay = document.querySelector("#idSecond");
 var inputTextDisplay = document.querySelector("#idSetLimit");
 var gameOver = false;
 
-function playerOne(){
+function playerOne(a){
+  console.log(a);
   if(!gameOver){
     firstPScore++;
     firstScoreDisplay.textContent=firstPScore;
-    console.log(limitScore)
     if(firstPScore == limitScore){
       gameOver = true;
       document.querySelector("#idStatus").textContent = "Player One Wins!"

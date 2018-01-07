@@ -1,0 +1,57 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+.square {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 0.5s;
+}
+
+#idContainer {
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.5s;
+}
+h1 {
+  text-align: center;
+  color: white;
+  background: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#idStripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+  color: black;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s
+}
+
+button:hover{
+  background: steelblue; 
+  color:white;
+}
+.selected{
+  background: steelblue;
+  color: white;
+}
