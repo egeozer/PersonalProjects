@@ -37,6 +37,8 @@ h2 {
   text-transform: uppercase;
   font-weight: normal;
   padding-bottom: 20px;
+  transition: all 0.3s
+
 }
 
 #idStripe {

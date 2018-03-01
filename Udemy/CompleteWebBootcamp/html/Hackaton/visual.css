@@ -1,0 +1,30 @@
+.btn-circle.btn-xl {
+  width: 60%;
+  height: 60%;
+  padding: 10px 16px;
+  border-radius: 100%;
+  font-size: 100%;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 60%;
+  height: 60%;
+  padding: 6px 0px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.btn-big{
+  font-size:30px;
+}
+.big-text{
+  font-size: 40px;
+  height: 100%;
+}
+
+.heart-logo{
+  font-size: 400px;
+}
